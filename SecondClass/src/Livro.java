@@ -18,6 +18,6 @@ public class Livro {
             System.out.println("Autor não informado.");
         }
 
-        System.out.println(); // linha em branco para separar livros
+        System.out.println();
     }
 }
