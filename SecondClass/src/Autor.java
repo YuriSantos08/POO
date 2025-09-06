@@ -1,9 +1,21 @@
 public class Autor {
-    String nome;
-    String email;
-    String cpf;
+    private String nome;
+    private String email;
+    private String cpf;
 
-    void mostrarDetalhes() {
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void mostrarDetalhes() {
         System.out.println("Detalhes do Autor:");
         System.out.println("Nome: " + nome);
         System.out.println("Email: " + email);

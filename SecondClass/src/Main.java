@@ -1,35 +1,32 @@
-
 public class Main {
     public static void main(String[] args) {
-
         Autor autor = new Autor();
-        autor.nome = "Joaozin";
-        autor.cpf = "4455871-99";
-        autor.email = "jaozin34@gmail.com";
+        autor.setNome("J.R.R. Tolkien");
+        autor.setEmail("jrrtolkien@gmail.com");
+        autor.setCpf("123456789");
 
-        autor.mostrarDetalhes();
+        Livro livro1 = new Livro(autor);
+        livro1.getNome("O Senhor dos Anéis");
+        livro1.setDescricao("Livro de fantasia");
+        livro1.setValor(400);
+        livro1.setIsbn("123456789");
+        livro1.setAutor(autor);
 
-        Livro livro = new Livro();
-        livro.nome = "O Senhor dos Aneis";
-        livro.descricao = "Uma história de fantasia";
-        livro.valor = 200.0;
-        livro.isbn = "123-456-78-9";
-        livro.autor = autor;
+        livro1.mostrarDetalhes();
 
-        livro.mostrarDetalhes();
 
-        Autor outroAutor = new Autor();
-        outroAutor.nome = "Leandro";
-        outroAutor.email = "Leandro22@gmail.com";
-        outroAutor.cpf = "887965-98";
 
-        Livro outrolivro = new Livro();
-        outrolivro.nome = "O Pequeno Príncipe";
-        outrolivro.descricao = "Uma história de fantasia 2";
-        outrolivro.valor = 100.0;
-        outrolivro.isbn = "123-456-56-9";
-        outrolivro.autor = outroAutor;
+        Ebook ebook = new Ebook(autor);
+        ebook.getNome("Herança em java");
+        ebook.setDescricao("Um livro de Programação");
+        ebook.setIsbn("74558966");
 
-        outrolivro.mostrarDetalhes();
+        ebook.setValor(200);
+
+        ebook.aplicarDescontoDe(10);
+
+
+
     }
 }
+
