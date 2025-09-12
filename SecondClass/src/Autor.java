@@ -1,24 +1,36 @@
 public class Autor {
-    private String nome;
-    private String email;
-    private String cpf;
+    private String nomeAutor;
+    private String emailAutor;
+    private String CPFAutor;
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    void mostrarDetalhesAutor(){
+        System.out.println("Detalhes do autor");
+        System.out.println("Nome: " + nomeAutor);
+        System.out.println("Email: " + emailAutor);
+        System.out.println("CPF: " + CPFAutor);
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getNomeAutor() {
+        return nomeAutor;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setNomeAutor(String nomeAutor) {
+        this.nomeAutor = nomeAutor;
     }
 
-    public void mostrarDetalhes() {
-        System.out.println("Detalhes do Autor:");
-        System.out.println("Nome: " + nome);
-        System.out.println("Email: " + email);
-        System.out.println("CPF: " + cpf);
+    public String getEmailAutor() {
+        return emailAutor;
+    }
+
+    public void setEmailAutor(String emailAutor) {
+        this.emailAutor = emailAutor;
+    }
+
+    public String getCPFAutor() {
+        return CPFAutor;
+    }
+
+    public void setCPFAutor(String CPFAutor) {
+        this.CPFAutor = CPFAutor;
     }
 }

@@ -1,39 +1,51 @@
 public class Ebook extends Livro {
-    private String watermark;
+    private String waterMark;
 
-    public Ebook(Autor autor) {
-        super(); // Chama o construtor padrão de Livro
-        this.setAutor(autor); // Usa o setter herdado para definir o autor
+    public Ebook(Autor autor){
+        super(autor);
     }
 
     @Override
-    public boolean aplicarDesconto(double porcentagem) {
-        if (porcentagem > 15) {
-            System.out.println("Não é possível dar desconto maior que 15%");
+    public boolean aplicarDescontoDe(double porcentagem){
+        if(porcentagem > 15){
+            System.out.println("O desconto não pode ser maior que 15%");
             return false;
         }
-        return super.aplicarDesconto(porcentagem);
-    }
-
-    public String getWatermark() {
-        return watermark;
-    }
-
-    public void setWatermark(String watermark) {
-        this.watermark = watermark;
+        return super.aplicarDescontoDe(porcentagem);
     }
 
     @Override
-    public void mostrarDetalhes() {
-        System.out.println("Detalhes do Ebook:");
-        System.out.println("Nome: " + this.getNome());
-        System.out.println("Descrição: " + this.getDescricao());
-        System.out.println("Valor: R$" + this.getValor());
-        System.out.println("ISBN: " + this.getIsbn());
-        System.out.println("Watermark: " + this.getWatermark());
+    void mostrarDetalhes(){
+        String mensagem = "Detalhes do livro: ";
+        System.out.println(mensagem);
+        System.out.println("Nome: " + getNome());
+        System.out.println("Descricao: " + getDescricao());
+        System.out.println("Valor: " + getValor());
+        System.out.println("ISBN: " + getIsbn());
+        System.out.println("Watermark: " + waterMark);
+        System.out.println("------------");
 
-        if (temAutor()) {
-            this.getAutor().mostrarDetalhes();
+
+        if(temAutor()){
+            getAutor().mostrarDetalhesAutor();
         }
+
+        System.out.println("-----------");
+    }
+
+
+
+
+
+
+
+
+
+    public String getWaterMark() {
+        return waterMark;
+    }
+
+    public void setWaterMark(String waterMark) {
+        this.waterMark = waterMark;
     }
 }
