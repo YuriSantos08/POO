@@ -3,14 +3,14 @@ public class Atleta extends Pessoa {
     private String esportePraticado;
 
     @Override
-    double imc() {
+   public double imc() {
 
         double imc = super.imc();
         double reducao = imc * 5 / 100;
         return imc - reducao;
     }
-
-    void mostrarDados() {
+@Override
+   public void mostrarDados() {
         String mensagem = "Detalhes do Atleta:";
         System.out.println(mensagem);
         System.out.println("Nome: " + getNome());
@@ -26,4 +26,5 @@ public class Atleta extends Pessoa {
     public void setEsportePraticado(String esportePraticado) {
         this.esportePraticado = esportePraticado;
     }
+
 }

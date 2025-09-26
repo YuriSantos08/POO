@@ -5,11 +5,11 @@ public class Pessoa {
     private double altura;
 
 
-    double imc() {
+   public double imc() {
         return peso/(altura*altura);
     }
 
-    void mostrarDados() {
+   public void mostrarDados() {
         String mensagem = "Detalhes da Pessoa:";
         System.out.println(mensagem);
         System.out.println("Nome: " + getNome());
