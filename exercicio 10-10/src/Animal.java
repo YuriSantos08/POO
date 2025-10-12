@@ -7,9 +7,17 @@ public abstract class Animal {
     }
 
     public  void dormir () {
-        System.out.println("O " + nome + "esta dormindo ...");
+        System.out.println("O animal " + getNome() + " está dormindo ...");
     }
 
     public abstract void fazerSom();
 
+    public void exibirDetalhes() {
+        System.out.println("O animal " + nome + " está dormindo ...");
+        fazerSom();
+    }
+
+    public String getNome() {
+        return nome;
+    }
 }
