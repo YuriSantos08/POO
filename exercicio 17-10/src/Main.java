@@ -10,7 +10,12 @@ public class Main {
 
     Recarregavel recarregavel = carro;
     recarregavel.recarregar(10 , 20);
+        System.out.println("Tempo máximo permitido: " + Recarregavel.TEMPO_MAXIMO + " minutos");
 
+
+        Autonamo autonomo = carro;
+        autonomo.dirigirAutonomamente("Dirigir autonomamente ativado");
+        System.out.println("Suporte GPS: " + Autonamo.SUPORTE_GPS);
 
     }
 }
