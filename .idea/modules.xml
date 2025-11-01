@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/At1/At1.iml" filepath="$PROJECT_DIR$/At1/At1.iml" />
       <module fileurl="file://$PROJECT_DIR$/co/CoesaoeAcoplamento.iml" filepath="$PROJECT_DIR$/co/CoesaoeAcoplamento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Excecoes/Excecoes.iml" filepath="$PROJECT_DIR$/Excecoes/Excecoes.iml" />
       <module fileurl="file://$PROJECT_DIR$/FirstClass/FirstClass.iml" filepath="$PROJECT_DIR$/FirstClass/FirstClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO.iml" filepath="$PROJECT_DIR$/POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClasseAbstrata/SecondClass.iml" filepath="$PROJECT_DIR$/ClasseAbstrata/SecondClass.iml" />
@@ -11,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/exercicio 17-10/exercicio 17-10.iml" filepath="$PROJECT_DIR$/exercicio 17-10/exercicio 17-10.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicio 22-08/exercicio 22-08.iml" filepath="$PROJECT_DIR$/exercicio 22-08/exercicio 22-08.iml" />
       <module fileurl="file://$PROJECT_DIR$/co/exercicio 24-10/exercicio 24-10.iml" filepath="$PROJECT_DIR$/co/exercicio 24-10/exercicio 24-10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Excecoes/exercicio 31-10/exercicio 31-10.iml" filepath="$PROJECT_DIR$/Excecoes/exercicio 31-10/exercicio 31-10.iml" />
       <module fileurl="file://$PROJECT_DIR$/interface/interface.iml" filepath="$PROJECT_DIR$/interface/interface.iml" />
     </modules>
   </component>
