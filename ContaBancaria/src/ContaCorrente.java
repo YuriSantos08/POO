@@ -1,6 +1,6 @@
 public class ContaCorrente  extends Conta implements OperacoesBancarias{
 
-    private  double TaxaSaque = 0.005;
+    private  double taxaSaque = 0.005;
 
     public ContaCorrente(String titular, String numero, double saldo) {
         super(titular, numero, saldo);
@@ -8,7 +8,7 @@ public class ContaCorrente  extends Conta implements OperacoesBancarias{
 
     @Override
     public void sacar(double saque) throws SaldoException {
-        double valorComTaxa = saque + (saque * TaxaSaque);
+        double valorComTaxa = saque + (saque * taxaSaque);
         super.sacar(valorComTaxa);
     }
 
@@ -19,7 +19,7 @@ public class ContaCorrente  extends Conta implements OperacoesBancarias{
     }
 
     @Override
-    public void ImprimirExtrato() {
+    public void imprimirExtrato() {
         System.out.println("=== Extrato Conta Corrente ===");
         System.out.println("Titular: " + getTitular());
         System.out.println("Número: " + getNumero());
