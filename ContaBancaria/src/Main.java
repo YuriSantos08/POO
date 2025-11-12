@@ -1,29 +1,29 @@
-
 public class Main {
     public static void main(String[] args) {
 
-        // Criando contas
-        ContaCorrente cc = new ContaCorrente("Yuri", "123", 1000);
-        ContaPoupanca cp = new ContaPoupanca("Maria", "456", 500);
+        ContaCorrente cc = new ContaCorrente("Yuri", "63046-2", 1500);
+        ContaPoupanca cp = new ContaPoupanca("Maria", "63046-5", 500);
         try {
+            cc.depositar(200);
+            cc.sacar(100);
+            cc.transferir(cp, 300);
+
+            cc.atualizarSaldo();
+
+            cp.depositar(200);
+            cp.sacar(200);
+            cp.transferir(cc, 300);
 
 
-            // Operações
-            cc.depositar(200); // depósito
-            cc.sacar(100);     // saque com taxa
-            cc.transferir(cp, 300); // transferência
-
-            // Atualizar saldo da poupança (rendimento)
             cp.atualizarSaldo();
 
-            // Extratos
             cc.imprimirExtrato();
             cp.imprimirExtrato();
 
         } catch (SaldoException e) {
             System.out.println("Erro: " + e.getMessage());
-        } catch (IllegalArgumentException e) {
-            System.out.println("Erro: " + e.getMessage());
+        }finally {
+            System.out.println("Operaçao finalizada!!");
         }
     }
 }

@@ -17,6 +17,7 @@ public abstract class Conta {
             throw new SaldoException("Valor inválido! O valor do depósito deve ser maior que zero.");
         }
         saldo += valor;
+        System.out.println("Deposito realizado com sucesso! Saldo atual: " + saldo );
     }
 
     public void sacar(double saque) throws SaldoException {
